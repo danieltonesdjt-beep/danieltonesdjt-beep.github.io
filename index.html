@@ -29,7 +29,9 @@
     .section-number { color: #71838e; font-size: .83rem; font-weight: 700; letter-spacing: .11em; }
     .card { background: #edf1f3; border: 1px solid #cdd8df; border-radius: 14px; padding: clamp(26px, 5vw, 42px); box-shadow: 0 10px 28px rgba(30, 44, 55, .035); }
     .pill { display: inline-block; color: #276889; background: #deeff8; border: 1px solid #c9e3f1; border-radius: 999px; padding: 5px 12px; font-size: .8rem; font-weight: 700; }
-    h3 { font-size: 1.85rem; letter-spacing: -.03em; margin: 16px 0 7px; }
+    h3 { font-size: 1.85rem; letter-spacing: -.03em; margin: 0; }
+    .app-title { display: flex; align-items: center; gap: 14px; margin: 16px 0 7px; }
+    .app-icon { display: block; width: 52px; height: 52px; border-radius: 12px; object-fit: cover; flex: none; }
     .card p, .section p { color: #53616b; max-width: 690px; margin: 0; }
     .card .description { margin-bottom: 25px; }
     .privacy-link { display: inline-block; padding: 10px 15px; color: #216a98; border: 1px solid #83b8d6; border-radius: 8px; text-decoration: none; font-weight: 650; }
@@ -59,7 +61,10 @@
       <div class="section-heading"><h2 id="apps-heading">Apps</h2><span class="section-number">01</span></div>
       <article class="card">
         <span class="pill">In development</span>
-        <h3>AbroadFX</h3>
+        <div class="app-title">
+          <img class="app-icon" src="./abroadfx-icon.png" width="52" height="52" alt="" decoding="async">
+          <h3>AbroadFX</h3>
+        </div>
         <p class="description">A straightforward currency converter for travelling, with quick access to the currencies you use most.</p>
         <a class="privacy-link" href="./abroadfx-privacy.html">AbroadFX privacy policy →</a>
       </article>
