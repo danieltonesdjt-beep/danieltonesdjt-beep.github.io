@@ -3,48 +3,80 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#0b1830">
+  <meta name="theme-color" content="#e8ecef">
   <meta name="description" content="Apps and other projects by DTones. Explore AbroadFX and follow future projects.">
   <title>DTones Dev | Apps and projects</title>
   <style>
-    :root { color-scheme: dark; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #091426; color: #eaf2ff; }
+    :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #e8ecef; color: #242b31; }
     * { box-sizing: border-box; }
-    body { margin: 0; min-height: 100vh; }
-    a { color: #92c9ff; }
-    a:focus-visible { outline: 3px solid #92c9ff; outline-offset: 4px; }
-    header, main, footer { max-width: 850px; margin: 0 auto; padding-left: 24px; padding-right: 24px; }
-    header { padding-top: 34px; padding-bottom: 34px; }
-    .brand { font-weight: 750; letter-spacing: .02em; color: #fff; text-decoration: none; font-size: 1.15rem; }
-    .brand span { color: #77bcff; }
-    main { padding-top: 44px; padding-bottom: 100px; }
-    h1 { font-size: clamp(2.6rem, 8vw, 4.6rem); line-height: 1.08; letter-spacing: -.045em; margin: 18px 0; }
-    .intro { font-size: 1.15rem; line-height: 1.65; color: #b8c9e0; max-width: 610px; margin-bottom: 70px; }
-    h2 { font-size: 1.4rem; margin-bottom: 20px; }
-    .card { background: #11233d; border: 1px solid #294462; border-radius: 18px; padding: 30px; }
-    .card h3 { font-size: 1.6rem; margin: 0 0 12px; }
-    .card p { color: #c4d3e6; line-height: 1.7; margin: 0 0 20px; }
-    .privacy-link { display: inline-block; padding: 10px 15px; border: 1px solid #668db8; border-radius: 9px; text-decoration: none; font-weight: 650; }
-    .privacy-link:hover { background: #1b3a5e; }
-    .pill { display: inline-block; color: #9bd0ff; background: #173657; border-radius: 999px; padding: 7px 12px; font-size: .8rem; font-weight: 650; margin-bottom: 18px; }
-    footer { border-top: 1px solid #294462; padding-top: 26px; padding-bottom: 40px; color: #adbed4; font-size: .9rem; }
-    @media (max-width: 500px) { main { padding-top: 20px; } .intro { margin-bottom: 48px; } .card { padding: 24px; } }
+    html { scroll-behavior: smooth; }
+    body { margin: 0; line-height: 1.6; }
+    a { color: #256d9f; }
+    a:focus-visible { outline: 3px solid #3e9bd1; outline-offset: 4px; }
+    .wrap { max-width: 980px; margin: 0 auto; padding-left: 28px; padding-right: 28px; }
+    header { border-bottom: 1px solid #cdd5db; }
+    header .wrap { display: flex; align-items: center; justify-content: space-between; gap: 24px; min-height: 88px; }
+    .brand { color: #242b31; text-decoration: none; font-size: 1.2rem; font-weight: 750; letter-spacing: -.02em; white-space: nowrap; }
+    .brand span { color: #459ac9; }
+    nav { display: flex; flex-wrap: wrap; gap: 22px; }
+    nav a { color: #4c5962; text-decoration: none; font-size: .95rem; font-weight: 600; }
+    nav a:hover, nav a:focus-visible { color: #256d9f; }
+    .hero { padding-top: clamp(64px, 10vw, 120px); padding-bottom: clamp(70px, 11vw, 128px); }
+    h1 { max-width: 840px; font-size: clamp(2.55rem, 6.5vw, 4.7rem); line-height: 1.1; letter-spacing: -.055em; margin: 0 0 25px; }
+    .intro { color: #52616b; font-size: 1.12rem; max-width: 620px; margin: 0; }
+    .section { border-top: 3px solid #8ac6e8; padding-top: 28px; padding-bottom: 90px; }
+    .section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 18px; margin-bottom: 28px; }
+    h2 { font-size: 1.55rem; letter-spacing: -.025em; margin: 0; }
+    .section-number { color: #71838e; font-size: .83rem; font-weight: 700; letter-spacing: .11em; }
+    .card { background: #f8fafb; border: 1px solid #cdd8df; border-radius: 14px; padding: clamp(26px, 5vw, 42px); box-shadow: 0 10px 28px rgba(30, 44, 55, .035); }
+    .pill { display: inline-block; color: #276889; background: #deeff8; border: 1px solid #c9e3f1; border-radius: 999px; padding: 5px 12px; font-size: .8rem; font-weight: 700; }
+    h3 { font-size: 1.85rem; letter-spacing: -.03em; margin: 16px 0 7px; }
+    .card p, .section p { color: #53616b; max-width: 690px; margin: 0; }
+    .card .description { margin-bottom: 25px; }
+    .privacy-link { display: inline-block; padding: 10px 15px; color: #216a98; border: 1px solid #83b8d6; border-radius: 8px; text-decoration: none; font-weight: 650; }
+    .privacy-link:hover { background: #e5f3fb; }
+    .contact-link { font-weight: 650; }
+    footer { border-top: 1px solid #cdd5db; color: #687782; font-size: .9rem; padding-top: 25px; padding-bottom: 45px; }
+    @media (max-width: 600px) { header .wrap { min-height: 76px; } nav { gap: 13px; } .section { padding-bottom: 68px; } }
   </style>
 </head>
 <body>
-  <header><a class="brand" href="./">DTones<span> Dev</span></a></header>
-  <main>
-    <h1>Apps &amp; other projects, created to challenge myself.</h1>
-    <p class="intro">A home for the things I build and learn along the way. AbroadFX is the first app, with more projects to come.</p>
-    <section aria-labelledby="apps-heading">
-      <h2 id="apps-heading">Apps</h2>
+  <header>
+    <div class="wrap">
+      <a class="brand" href="./">DTones <span>Dev</span></a>
+      <nav aria-label="Main navigation">
+        <a href="#apps">Apps</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  <main class="wrap">
+    <div class="hero">
+      <h1>Apps &amp; other projects, created to challenge myself.</h1>
+      <p class="intro">A home for the things I build and learn along the way. AbroadFX is the first app, with more projects to come.</p>
+    </div>
+
+    <section class="section" id="apps" aria-labelledby="apps-heading">
+      <div class="section-heading"><h2 id="apps-heading">Apps</h2><span class="section-number">01</span></div>
       <article class="card">
         <span class="pill">In development</span>
         <h3>AbroadFX</h3>
-        <p>A straightforward currency converter for travelling, with quick access to the currencies you use most.</p>
-        <p><a class="privacy-link" href="./abroadfx-privacy.html">AbroadFX privacy policy →</a></p>
+        <p class="description">A straightforward currency converter for travelling, with quick access to the currencies you use most.</p>
+        <a class="privacy-link" href="./abroadfx-privacy.html">AbroadFX privacy policy →</a>
       </article>
     </section>
+
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="section-heading"><h2 id="about-heading">About</h2><span class="section-number">02</span></div>
+      <p>DTones Dev is a place to share the apps and other projects I create as I learn and try new ideas.</p>
+    </section>
+
+    <section class="section" id="contact" aria-labelledby="contact-heading">
+      <div class="section-heading"><h2 id="contact-heading">Contact</h2><span class="section-number">03</span></div>
+      <p>Questions about AbroadFX or a project? <a class="contact-link" href="mailto:danieltones.alt@gmail.com">Get in touch by email</a>.</p>
+    </section>
   </main>
-  <footer>© 2026 DTones</footer>
+  <footer class="wrap">© 2026 DTones</footer>
 </body>
 </html>
