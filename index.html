@@ -4,8 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#d9dfe3">
-  <meta name="description" content="Apps and other projects by DTones. Explore AbroadFX and follow future projects.">
+  <meta name="description" content="Discover AbroadFX, the free iPhone currency converter from DTones Dev. Compare up to four currencies, save favourite setups and add a Home Screen widget.">
   <title>DTones Dev | Apps and projects</title>
+  <link rel="canonical" href="https://danieltonesdjt-beep.github.io/">
+  <link rel="icon" type="image/png" href="./abroadfx-icon-current.png">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="DTones Dev | AbroadFX and other projects">
+  <meta property="og:description" content="Travel currencies at a glance. Discover AbroadFX, the free iPhone currency converter with Home Screen widgets.">
+  <meta property="og:url" content="https://danieltonesdjt-beep.github.io/">
+  <meta property="og:image" content="https://danieltonesdjt-beep.github.io/abroadfx-icon-current.png">
   <style>
     :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #d9dfe3; color: #242b31; }
     * { box-sizing: border-box; }
@@ -38,6 +45,23 @@
     .privacy-link:hover { background: #e5f3fb; }
     .contact-link { font-weight: 650; }
     footer { border-top: 1px solid #cdd5db; color: #687782; font-size: .9rem; padding-top: 25px; padding-bottom: 45px; }
+    .hero-intro { color: #53616b; max-width: 580px; margin: 24px 0 0; font-size: 1.1rem; }
+    .app-icon { width: 76px; height: 76px; border-radius: 17px; }
+    .app-title { gap: 18px; margin: 22px 0 20px; }
+    .app-tagline { font-weight: 600; }
+    .actions { display: flex; align-items: center; flex-wrap: wrap; gap: 14px; margin: 24px 0 12px; }
+    .download-link { display: inline-block; padding: 12px 20px; border: 1px solid #242b31; border-radius: 8px; background: #242b31; color: #fff; text-decoration: none; font-weight: 700; }
+    .download-link:hover { background: #36434d; }
+    .card .availability { font-size: .85rem; color: #53616b; }
+    .features { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; border-top: 1px solid #cdd8df; margin-top: 32px; padding-top: 28px; }
+    .features h4 { margin: 0 0 8px; font-size: 1rem; letter-spacing: -.015em; }
+    .features p { font-size: .95rem; }
+    .widget-guide { margin-top: 30px; border-top: 1px solid #cdd8df; padding-top: 22px; }
+    .widget-guide summary { cursor: pointer; font-weight: 650; padding: 6px 0; }
+    .widget-guide ol { padding-left: 22px; color: #53616b; margin-bottom: 0; }
+    .widget-guide li + li { margin-top: 8px; }
+    @media (max-width: 600px) { .features { grid-template-columns: 1fr; gap: 22px; } header .wrap { flex-wrap: wrap; gap: 10px; padding-top: 16px; padding-bottom: 16px; } nav { column-gap: 16px; } .app-title { align-items: flex-start; } h3 { font-size: 1.65rem; } .actions { align-items: stretch; } .actions a { text-align: center; } }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
     @media (max-width: 600px) { header .wrap { min-height: 76px; } nav { gap: 13px; } .section { padding-bottom: 68px; } }
   </style>
 </head>
@@ -55,18 +79,49 @@
   <main class="wrap">
     <div class="hero">
       <h1>Apps &amp; other projects, created to challenge myself.</h1>
-          </div>
+      <p class="hero-intro">Independent projects by DTones. Starting with AbroadFX: travel currencies at a glance.</p>
+    </div>
 
     <section class="section" id="apps" aria-labelledby="apps-heading">
       <div class="section-heading"><h2 id="apps-heading">Apps</h2><span class="section-number">01</span></div>
-      <article class="card">
-        <span class="pill">In development</span>
+      <article class="card" aria-labelledby="abroadfx-title">
+        <span class="pill">Available on the App Store</span>
         <div class="app-title">
-          <img class="app-icon" src="./abroadfx-icon-current.png" width="52" height="52" alt="" decoding="async">
-          <h3>AbroadFX</h3>
+          <img class="app-icon" src="./abroadfx-icon-current.png" width="76" height="76" alt="" decoding="async">
+          <div>
+            <h3 id="abroadfx-title">AbroadFX</h3>
+            <p class="app-tagline">Travel currencies at a glance.</p>
+          </div>
         </div>
-        <p class="description">Check exchange rates at a glance with AbroadFX. Save your favourite currencies, set your home currency, and view conversions directly from your home screen widget.</p>
-        <a class="privacy-link" href="./abroadfx-privacy.html">AbroadFX privacy policy →</a>
+        <p class="description">Planning a trip or checking a price abroad? Enter an amount and compare up to four currencies side by side. Save your favourite setups and keep your chosen conversions close with a Home Screen widget.</p>
+        <div class="actions">
+          <a class="download-link" href="https://apps.apple.com/gb/app/abroadfx/id6816696781" aria-label="Download AbroadFX on the App Store">Download on the App Store</a>
+          <a class="privacy-link" href="./abroadfx-privacy.html">Privacy policy</a>
+        </div>
+        <p class="availability">Free for iPhone · Contains ads · Availability varies by country or region.</p>
+        <div class="features">
+          <div>
+            <h4>Compare at a glance</h4>
+            <p>See up to four target currencies together, so you can check prices without switching back and forth.</p>
+          </div>
+          <div>
+            <h4>Save your favourite setups</h4>
+            <p>Keep the currency combinations you use most as templates, with a home currency for quick access.</p>
+          </div>
+          <div>
+            <h4>Currencies on your Home Screen</h4>
+            <p>Add the AbroadFX widget to keep your chosen conversions in view, ready for a quick glance.</p>
+          </div>
+        </div>
+        <details class="widget-guide">
+          <summary>How do I add the Home Screen widget?</summary>
+          <ol>
+            <li>Open AbroadFX and choose the currencies you want to use.</li>
+            <li>On your iPhone Home Screen, touch and hold an empty area until the apps jiggle.</li>
+            <li>Open the widget gallery using Edit → Add Widget, or the + button, depending on your iOS version.</li>
+            <li>Search for AbroadFX, choose a widget and tap Add Widget, then Done.</li>
+          </ol>
+        </details>
       </article>
     </section>
 
